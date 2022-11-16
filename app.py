@@ -1,3 +1,5 @@
+#!/usr/bin/python3.11
+
 from flask import Flask
 
 __all__ = ["init_app"]
@@ -6,6 +8,11 @@ DEFAULT_APP_NAME = "flask_ddd_example"
 
 
 def init_app(app_name: str = None):
+    """
+    Init flask app
+    :param app_name:
+    :return:
+    """
 
     if app_name is None:
         app_name = DEFAULT_APP_NAME
